@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <form id="form" method="post" action="/register">  
+        <div id="container">  
+        <center>  <h1> Student Registeration Form</h1> </center>  
+        <hr>  
+        <label> Firstname: <span class="req">*</span> </label>   
+      <input type="text" name="firstname" placeholder= "Firstname" size="15" id="name" required />   
+      <label> Middlename: <span class="req">*</span> </label>   
+      <input type="text" name="middlename" placeholder="Middlename" size="15" id="middlename" required />   
+      <label> Lastname: <span class="req">*</span> </label>    
+      <input type="text" name="lastname" placeholder="Lastname" size="15" id="lastname" required />   
+      
+  
+<br><br>
+<div>
+      <label>   
+      Region :  
+      </label>   
+        
+      <select id="region">  
+      <option value="Region">Region</option>  
+      <option value="Yerevan">Yerevan</option>  
+      <option value="Aragacotn">Aragacotn</option>  
+      <option value="Ararat">Ararat</option>  
+      <option value="Armavir">Armavir</option>  
+      <option value="Gegharkunic">Gegharkunic</option>  
+      <option value="Kotayk">Kotayk</option>  
+      <option value="Lori">Lori</option>
+      <option value="Shirak">Shirak</option>
+      <option value="Syuniq">Syuniq</option>
+      <option value="Tavush">Tavush</option>
+      <option value="Vayoc dzor">Vayoc dzor</option>
+      </select>  
+      </div> 
+
+    
+      Current Address :  <span class="req">*</span>
+      <input type="text" placeholder="Current Address" id="adress" required>  
+       
+       <label for="email"><b>Email</b></label>  
+       <input type="text" placeholder="Enter Email" name="email"  id="email" required>  
+
+       <!-- Enter Password -->
+       <td > Enter Password </td>
+       <input type = "password" id = "pswd" value = "" name="password"> 
+       <span id = "message" style="color:red"> </span> <br><br>       
+          <button type="submit" class="registerbtn">Register</button>    
+      </form> 
+      
+
+    
+</body>
+</html>

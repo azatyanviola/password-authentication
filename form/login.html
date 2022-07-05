@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <link rel="stylesheet" href="styleLogin.css">
+</head>
+<body>
+    <center>
+        <h3 class="label"> Verify valid password and username</h3>
+        <div class="container">
+        <form id="form"  method="post" action="/login">
+
+        <!-- Enter UserName -->
+        <td > Enter Email </td>
+        <input type = "email" id = "user" value = "" name = "email">  
+        <span id = "name" style="color:red"> </span> <br><br>
+
+        <!-- Enter Password -->
+        <td > Enter Password </td>
+        <input type = "password" id = "pswd" value = "" name="password"> 
+        <span id = "message" style="color:red"> </span> <br><br>
+        
+        <!-- Click to verify valid password -->
+        <input type = "submit" id="login" value = "Login" >
+        
+        </form>
+        </div>
+        <div class="container"></div>
+        </center>
+        <script src="main.js"></script>
+</body>
+</html>
